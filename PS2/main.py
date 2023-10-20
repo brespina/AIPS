@@ -1,3 +1,9 @@
+"""
+Brandon Espina
+10/20/2023
+COSC_4368
+Dr. Lin
+"""
 import pandas as pd
 import numpy as np
 import matplotlib
