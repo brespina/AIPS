@@ -15,7 +15,7 @@ from sklearn.neural_network import MLPClassifier
 
 
 
-df = pd.read_excel('/content/train.xlsx')
+df = pd.read_excel('C:\\Users\Windows\Desktop\COSC_4368\AIPS\PS2\content\\train.xlsx')
 
 
 train_df = df[['Survived','Pclass','Sex','Age','SibSp','Parch','Fare','Embarked']].copy()
