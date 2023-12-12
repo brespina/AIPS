@@ -18,7 +18,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.neural_network import MLPClassifier
 
-df = pd.read_excel('C:\\Users\Windows\Desktop\COSC_4368\AIPS\PS2\content\\train.xlsx')
+df = pd.read_csv('C:\\Users\Windows\Desktop\COSC_4368\AIPS\PS2\content\\train.xlsx')
 
 train_df = df[['Survived', 'Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked']].copy()
 
