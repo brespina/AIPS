@@ -24,7 +24,8 @@ data = pd.concat(df, axis=1)
 data.columns = ["interest", "vacancy", "consumer price index"]
 data = create_time_series_features(data)
 
-data = data.ffill().dropna()
+# data = data.ffill().dropna()
+data = data.dropna()
 
 HTX_data = ["Metro_median_sale_price_uc_sfrcondo_sm_sa_week.csv",
             "Metro_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv"]
