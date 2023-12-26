@@ -27,10 +27,12 @@ data = create_time_series_features(data)
 # data = data.ffill().dropna()
 data = data.dropna()
 
+HOUSTEN_INDEX = 6
+
 HTX_data = ["Metro_median_sale_price_uc_sfrcondo_sm_sa_week.csv",
             "Metro_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv"]
 df = [pd.read_csv(f) for f in HTX_data]
-df = [pd.DataFrame(dfs.iloc[6, 5:]) for dfs in df]
+df = [pd.DataFrame(dfs.iloc[HOUSTON_INDEX, 5:]) for dfs in df]
 
 for dfs in df:
     dfs.index = pd.to_datetime(dfs.index)
